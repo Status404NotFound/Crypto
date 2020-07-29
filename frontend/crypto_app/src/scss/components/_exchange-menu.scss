@@ -1,0 +1,162 @@
+.circular-menu {
+  position: relative;
+  width: 300px;
+  height: 300px
+}
+
+.menuOutPos{
+  right: 10%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.menuInPos{
+  left: 10%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.circular-menu__item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: 0.3s;
+  outline: none !important;
+  border-style: none;
+  transition-duration: 0.5s;
+
+  box-shadow: 0 3px 20px rgba(0,0,0,.25),
+  inset 0 2px 0 rgba(255,255,255,.6),
+  0 2px 0 rgba(0,0,0,.1),
+  inset 0 0 20px rgba(0,0,0,.1);
+}
+
+.circular-menu__item:hover {
+  box-shadow: inset 0 0 20px rgba(0,0,0,.2),
+  0 2px 0 rgba(255,255,255,.3),
+  inset 0 2px 0 rgba(0,0,0,.1);
+}
+
+.circular-menu__item_logo{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+.circular-menu__item_text{
+  display: block;
+  padding-top: 80px;
+  animation: hideBlock 0.5s linear forwards;
+  white-space: nowrap;
+  color: black;
+  font-size: 14px;
+}
+
+.circular-menu__item_text_active{
+  display: block;
+  padding-top: 80px;
+  animation: showBlock 0.5s linear forwards;
+  white-space: nowrap;
+  color: black;
+  font-size: 14px;
+}
+
+@keyframes showBlock {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hideBlock {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.circular-menu__current_button {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  font-weight: bold;
+  color: #0b0b0b;
+  border-radius: 50%;
+  background-color: #5f9c4c;
+  outline: none !important;
+  border-style: none;
+  z-index: 999999;
+  transition-duration: 0.6s;
+
+  box-shadow: 0 3px 20px rgba(0,0,0,.25),
+  inset 0 2px 0 rgba(109,161,93,.6),
+  0 2px 0 rgba(0,0,0,.1),
+  inset 0 0 20px rgba(0,0,0,.1);
+}
+
+.circular-menu__current_button:hover {
+  box-shadow: inset 0 0 20px rgba(0,0,0,.2),
+  0 2px 0 rgba(255,255,255,.4),
+  inset 0 2px 0 rgba(0,0,0,.1);
+}
+
+.circular-menu__current_button_active{
+  transform: scale(0.7) translate(-70%, -70%);
+  transition-duration: 0.6s;
+}
+
+.circular-menu__target_button {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  font-weight: bold;
+  color: #0b0b0b;
+  border-radius: 50%;
+  background-color: #ecb94a;
+  outline: none !important;
+  border-style: none;
+  z-index: 999999;
+  transition-duration: 0.6s;
+
+  box-shadow: 0 3px 20px rgba(0,0,0,.25),
+  inset 0 2px 0 rgba(236,185,74,.6),
+  0 2px 0 rgba(0,0,0,.1),
+  inset 0 0 20px rgba(0,0,0,.1);
+}
+
+.circular-menu__target_button:hover {
+  box-shadow: inset 0 0 20px rgba(0,0,0,.2),
+  0 2px 0 rgba(255,255,255,.4),
+  inset 0 2px 0 rgba(0,0,0,.1);
+}
+
+.circular-menu__target_button_active{
+  transform: scale(0.7) translate(-70%, -70%);
+  transition-duration: 0.6s;
+}

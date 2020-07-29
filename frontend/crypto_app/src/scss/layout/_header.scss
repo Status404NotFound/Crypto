@@ -1,0 +1,103 @@
+.header {
+  padding: 0px 0px;
+  background: #3b5998;
+  transition: all 0.3s ease-in-out;
+  z-index: 999;
+  height: 15vh;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  //box-shadow: 0 10px 1px -1px rgba(0, 0, 0, .7);
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  height: 75%;
+  width: 200px;
+  border-radius: 30px 30px 30px 30px;
+  transform: translate(0, -50%);
+  margin-left: 10vw;
+}
+
+.logo_text_first {
+  position: absolute;
+  margin-left: 13px;
+  margin-bottom: 5px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.logo_text_second {
+  position: absolute;
+  margin-left: 80px;
+  margin-top: 35px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.logo_crypto_coin {
+  width: 20px;
+  height: 20px;
+}
+
+.logo_fiat_coin {
+  width: 20px;
+  height: 20px;
+}
+
+.logo_ps_coin {
+  width: 20px;
+  height: 20px;
+}
+
+.support_button{
+  position: absolute;
+  margin-left: 40vw;
+  top: 50%;
+  height: 75%;
+  width: 70px;
+  transform: translate(0, -50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .7) inset;
+  background-color: white;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.login_button{
+  position: absolute;
+  margin-left: 55vw;
+  top: 50%;
+  height: 75%;
+  width: 70px;
+  transform: translate(0, -50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .7) inset;
+  background-color: white;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.choose_language{
+  position: absolute;
+  margin-left: 70vw;
+  top: 50%;
+  height: 75%;
+  width: 70px;
+  transform: translate(0, -50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .7) inset;
+  background-color: white;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.header_menu{
+  position: absolute;
+  margin-left: 85vw;
+  top: 50%;
+  height: 75%;
+  width: 70px;
+  transform: translate(0, -50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .7) inset;
+  background-color: white;
+  border-radius: 30px 30px 30px 30px;
+}
